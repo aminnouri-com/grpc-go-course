@@ -2,7 +2,7 @@
 FROM golang:1.22
 
 # Work directory
-WORKDIR /grpc-go-course
+WORKDIR /app
 
 # Installing dependencies
 COPY go.mod go.sum ./
@@ -12,7 +12,7 @@ RUN go mod download
 COPY . .
 
 # Starting our application
-CMD ["go", "run", "main.go"]
+CMD ["go", "run", "./greet/greet_server/server.go"]
 
 # Exposing server port
 EXPOSE 5000
