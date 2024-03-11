@@ -1,5 +1,5 @@
 # Latest golang image on apline linux
-FROM golang:1.22
+FROM golang:1.22.1
 
 # Work directory
 WORKDIR /app
