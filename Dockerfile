@@ -12,7 +12,7 @@ RUN go mod download
 COPY . .
 
 # Starting our application
-CMD ["go", "run", "./greet/greet_server/server.go"]
+CMD ["go", "run", "main.go"]
 
 # Exposing server port
-EXPOSE 5000
+EXPOSE 8080
